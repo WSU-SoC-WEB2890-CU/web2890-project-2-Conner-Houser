@@ -1,0 +1,368 @@
+
+$primary: #f2f2f2;
+$secondary: #2a3f57;
+
+/* Your styles go here */
+@import "bootstrap/scss/bootstrap.scss";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+@mixin text-shadow ($shadow: $secondary){
+  text-shadow: 2px 2px 5px $shadow; 
+}
+
+
+.hero{
+  background-image: url("../images/heroimage.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-top: 250px;
+  padding-bottom: 250px;
+
+  p{
+    @include text-shadow();
+  }
+
+  h1{
+    @include text-shadow();
+  }
+}
+
+#loadingscreen{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.slant{
+  background: rgb(255,255,255);
+  background: linear-gradient(175deg, rgba(255,255,255,1) 50%, rgba(220,61,75,1) 51%);
+  height: 200px;
+}
+
+.updates{
+  background-color: #dc3d4b;
+  padding-bottom: 300px;
+
+  h2{
+    text-align: center;
+    color: white;
+  }
+
+  .VCT{
+    background-color: #f2f2f2;
+    width: 500px;
+  }
+
+  .NewAgent{
+    background-color: #f2f2f2;
+    width: 500px;
+  }
+}
+
+/*Agent Gallery*/
+div.agent_gallery {
+    margin: 25px;
+    border: 1px solid #ccc;
+    width: 125px;
+    padding: 0;
+    
+  }
+  
+div.agent_gallery:hover {
+    border: 1px solid #777;
+    box-shadow: 5px 5px 10px  $secondary;
+  }
+  
+  
+div.agent_name {
+    padding: 15px;
+    text-align: center;
+  }
+
+
+
+  /*Map Gallery*/
+div.map_gallery{
+  display: block;
+  width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+div.map{
+    display: inline-block;
+    margin: 50px;
+    border: 1px solid #ccc;
+    
+}
+
+.desc{
+  text-align: center;
+}
+
+div.map:hover{
+  border: 1px solid #777;
+  box-shadow: 5px 5px 10px  $secondary;
+}
+
+/*Gun gallery*/
+
+// div#gun_gallery{
+//   display: block;
+  
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+// div#shotguns{
+//   display: inline-block;
+//   width: 800px;
+//   margin-left: auto;
+// }
+
+// div#smgs{
+//   display: inline-block;
+//   width: 800px;
+//   margin-left: auto;
+// }
+
+// div#sniper_rifle{
+//   display: inline-block;
+//   width: 800px;
+//   margin-left: auto;
+// }
+
+// div#lmgs{
+//   display: inline-block;
+//   width: 1000px;
+//   margin-left: auto;
+// }
+
+// div.guns{
+//   display: inline-block;
+//   margin: 50px;
+//   border: 1px solid #ccc;
+  
+// }
+
+
+div.guns:hover{
+border: 1px solid #777;
+box-shadow: 5px 5px 10px  $secondary;
+}
+
+h1 {
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+p{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+a{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+/*Navigation*/
+
+
+
+footer{
+  background-color: #1E2E40;
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+
+/*Call to Action Buttons*/
+
+header .logo{
+  float: left;
+  height: 75px;
+  padding-bottom: 10px;
+}
+
+.calltoaction p{
+  display: inline-block;
+  color: white;
+  background-color: #dc3d4b;
+  padding: 20px;
+}
+
+.valorant_discription{
+  text-align: center;
+  // background-color: $primary;
+  // color: white;
+}
+
+.valorant_discription img{
+  height: 500px;
+  padding-bottom: 10px;
+}
+
+#description {
+  width: 500px;
+  margin-right: auto;
+  margin-left:auto
+}
+
+
+
+.riot_projects{
+  display: inline-block;
+  width: 550px;
+  margin-left: auto;
+}
+
+
+
+@media only screen and (max-width: 860px) {
+  div.map_gallery{
+    display: inline-block;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+
+  .hero{
+    background-image: url("../images/heroimage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+  .updates{
+    background-color: #dc3d4b;
+    padding-bottom: 300px;
+  
+    h2{
+      text-align: center;
+      color: white;
+    }
+  
+    .VCT{
+      background-color: #f2f2f2;
+      width: 500px;
+    }
+  
+    .NewAgent{
+      background-color: #f2f2f2;
+      width: 500px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #loadingscreen{
+    height: 250px;
+    padding: 25px;
+  }
+
+  .hero{
+    background-image: url("../images/heroimage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+  div.map_gallery{
+    display: block;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+
+  .about_info{
+    display: inline-block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  .riot_projects{
+    display: inline-block;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .parent{
+    display: block;
+    width: 550px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .Riot_logo{
+    height: 100px;
+  }
+
+  .guns img{
+    height: 50px;
+    width: 120px;
+  }
+
+  #lmgs .guns img{
+    height: 50px;
+    width: 120px;
+  }
+
+  #assult_rifle .guns img{
+    height: 50px;
+    width: 120px;
+  }
+
+  .gun_gallery{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header .logo{
+    float: left;
+    height: 50px;
+    padding-bottom: 10px;
+  }
+
+  nav ul {
+    display: inline-block;  
+    list-style: none;     
+}
+
+nav ul li{
+  float: left;
+  padding: 5px;
+  color: white;
+  
+}
+
+.updates{
+  background-color: #dc3d4b;
+  padding-bottom: 300px;
+
+  h2{
+    text-align: center;
+    color: white;
+  }
+
+  .VCT{
+    background-color: #f2f2f2;
+    width: 300px;
+  }
+
+  .NewAgent{
+    background-color: #f2f2f2;
+    width: 300px;
+  }
+}
+}
