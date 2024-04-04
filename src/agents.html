@@ -11,7 +11,7 @@
     <header class="d-flex flex-wrap justify-content-center py-3 bg-secondary">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
           <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          <span class="fs-4">Learn Valorant</span>
+          <span class="fs-4 text-light">Learn Valorant</span>
         </a>
   
         <ul class="nav nav-pills">
@@ -24,127 +24,339 @@
       </header>
 
       <body>
-        <h1 class="pt-5">Choose your character</h1>
-        <div class="container-fluid gap-3 col">
 
-            <div class="row justify-content-center">
-                <div class="agent_gallery">
-                    <img src="./images/agents/Jett.png" alt="Jett" height="299px" width="125">
-                    <div class="agent_name">Jett</div>
-                </div>
+        <div class="bg-danger container my-4 p-2 rounded-5 shadow">
+        <h1 class=" p-2 text-light">Choose your character</h1>
 
-                <div class="agent_gallery">
-                    <img src="./images/agents/Raze.png" alt="Raze" height="299px" width="125" >
-                    <div class="agent_name">Raze</div>
-                </div>
+        <p class="text-center container text-light">
+            In Valorant each character can be categorized into one of 4 class: Controlles, Duelists, Initiators, and Senstinels. Each class plays a different role in the team and their abilities
+            can heavily impact your style of gameplay. View the accoridon below to learn about each character and who fits your playstyle
+        </p>
 
-                <div class="agent_gallery">
-                    <img src="./images/agents/Phoenix.png" alt="Phoenix" height="299px" width="125">
-                    <div class="agent_name">Phoenix</div>
-                </div>
+        <div class="accordion container my-4" id="accordionExample">
+            <div class="accordion-item ">
+              <h2 class="accordion-header">
+                <button class="accordion-button bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Duelist
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  
+                    <div class="container-fluid gap-3 col">
 
-                <div class="agent_gallery">
-                    <img src="./images/agents/Reyna.jpg" alt="Reyna" height="299px" width="125" >
-                    <div class="agent_name">Reyna</div>
-                </div>
+                        <div class="row justify-content-center">
+                    
+                          
+                            <div class="agent_gallery bg-primary">
+                              <a href="./Individual Agents/Jett.html">
+                                <div>
+                                  <img src="./images/agents/Jett.png" alt="Jett" height="299px" width="125">
+                                  <div class="agent_name">
+                                    <p class="text-dark">Jett</p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          
 
-                <div class="agent_gallery">
-                    <img src="./images/agents/Yoru.png" alt="Yoru" height="299px" width="125" >
-                    <div class="agent_name">Yoru</div>
-                </div>
-
-                <div class="agent_gallery">
-                    <img src="./images/agents/Neon.webp" alt="Neon" height="299px" width="125">
-                    <div class="agent_name">Neon</div>
-                </div>
-
-                <div class="agent_gallery">
-                    <img src="./images/agents/Iso.png" alt="Neon" height="299px" width="125">
-                    <div class="agent_name">Iso</div>
-                </div>
-        
-                <div class="agent_gallery">
-                    <img src="./images/agents/Omen.png" alt="Omen" height="299px" width="125">
-                    <div class="agent_name">Omen</div>
-                </div>
-
-                <div class="agent_gallery">
-                    <img src="./images/agents/Viper.png" alt="Viper" height="299px" width="125">
-                    <div class="agent_name">Viper</div>
-                </div>
-
-                <div class="agent_gallery">
-                    <img src="./images/agents/Brimstone.png" alt="Brimstone" height="299px" width="125">
-                    <div class="agent_name">Brimstone</div>
-                </div>
-
-                <div class="agent_gallery">
-                    <img src="./images/agents/Astra.webp" alt="Astra" height="299px" width="125">
-                    <div class="agent_name">Astra</div>
-                </div>
-
-                <div class="agent_gallery">
-                    <img src="./images/agents/Harbor.webp" alt="Harbor" height="299px" width="125">
-                    <div class="agent_name">Harbor</div>
-                </div>
+                            <div class="agent_gallery bg-primary">
+                              <a href="./Individual Agents/Raze.html">
+                                <div>
+                                  <img src="./images/agents/Raze.png" alt="Jett" height="299px" width="125">
+                                  <div class="agent_name">
+                                    <p class="text-dark">Raze</p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                          
             
-                <div class="agent_gallery">
-                    <img src="./images/agents/Sage.png" alt="Sage" height="299px" width="125">
-                    <div class="agent_name">Sage</div>
-                </div>
-
-                <div class="agent_gallery">
-                    <img src="./images/agents/Cypher.png" alt="Cypher" height="299px" width="125">
-                    <div class="agent_name">Cypher</div>
-                </div>
-
-                <div class="agent_gallery">
-                    <img src="./images/agents/Killjoy.png" alt="Killjoy" height="299px" width="125">
-                    <div class="agent_name">Killjoy</div>
-                </div>
-
-                <div class="agent_gallery">
-                    <img src="./images/agents/Chamber.webp" alt="Chamber" height="299px" width="125">
-                    <div class="agent_name">Chamber</div>
-                </div>
-
-                <div class="agent_gallery">
-                    <img src="./images/agents/Deadlock.webp" alt="Chamber" height="299px" width="125">
-                    <div class="agent_name">Deadlock</div>
-                </div>
+                            <div class="agent_gallery bg-primary">
+                              <a href="./Individual Agents/Phoenix.html">
+                                <div>
+                                  <img src="./images/agents/Phoenix.png" alt="Jett" height="299px" width="125">
+                                  <div class="agent_name">
+                                    <p class="text-dark">Phoenix</p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
             
-                <div class="agent_gallery">
-                    <img src="./images/agents/Sova.png" alt="Sova" height="299px" width="125">
-                    <div class="agent_name">Sova</div>
-                </div>
+                            <div class="agent_gallery bg-primary">
+                              <a href="./Individual Agents/Reyna.html">
+                                <div>
+                                  <img src="./images/agents/Reyna.jpg" alt="Jett" height="299px" width="125">
+                                  <div class="agent_name">
+                                    <p class="text-dark">Reyna</p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+            
+                            <div class="agent_gallery bg-primary">
+                              <a href="./Individual Agents/Yoru.html">
+                                <div>
+                                  <img src="./images/agents/Yoru.png" alt="Jett" height="299px" width="125">
+                                  <div class="agent_name">
+                                    <p class="text-dark">Yoru</p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+            
+                            <div class="agent_gallery bg-primary">
+                              <a href="./Individual Agents/Neon.html">
+                                <div>
+                                  <img src="./images/agents/Neon.webp" alt="Jett" height="299px" width="125">
+                                  <div class="agent_name">
+                                    <p class="text-dark">Neon</p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+            
+                            <div class="agent_gallery bg-primary">
+                              <a href="./Individual Agents/Iso.html">
+                                <div>
+                                  <img src="./images/agents/Iso.png" alt="Jett" height="299px" width="125">
+                                  <div class="agent_name">
+                                    <p class="text-dark">Iso</p>
+                                  </div>
+                                </div>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="agent_gallery">
-                    <img src="./images/agents/Breach.png" alt="Breach" height="299px" width="125">
-                    <div class="agent_name">Breach</div>
                 </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Controller
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="container-fluid gap-3 col">
 
-                <div class="agent_gallery">
-                    <img src="./images/agents/skye.webp" alt="Kayo" height="299px" width="125">
-                    <div class="agent_name">Skye</div>
+                        <div class="row justify-content-center">
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Omen.html">
+                              <div>
+                                <img src="./images/agents/Omen.png" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Omen</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+            
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Viper.html">
+                              <div>
+                                <img src="./images/agents/Viper.png" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Viper</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+            
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Brimstone.html">
+                              <div>
+                                <img src="./images/agents/Brimstone.png" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Brimstone</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+            
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Astra.html">
+                              <div>
+                                <img src="./images/agents/Astra.webp" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Astra</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+            
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Harbor.html">
+                              <div>
+                                <img src="./images/agents/Harbor.webp" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Harbor</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
                 </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header ">
+                <button class="accordion-button collapsed bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Sentinal
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <div class="container-fluid gap-3 col">
 
-                <div class="agent_gallery">
-                    <img src="./images/agents/Kayo.png" alt="Kayo" height="299px" width="125">
-                    <div class="agent_name">Kayo</div>
+                        <div class="row justify-content-center">
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Sage.html">
+                              <div>
+                                <img src="./images/agents/Sage.png" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Sage</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+            
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Cypher.html">
+                              <div>
+                                <img src="./images/agents/Cypher.png" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Cypher</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+            
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Killjoy.html">
+                              <div>
+                                <img src="./images/agents/Killjoy.png" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Killjoy</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+            
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Chamber.html">
+                              <div>
+                                <img src="./images/agents/Chamber.webp" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Chamber</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+            
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Deadlock.html">
+                              <div>
+                                <img src="./images/agents/Deadlock.webp" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Deadlock</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
                 </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header ">
+                  <button class="accordion-button collapsed bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                    Initiator
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="container-fluid gap-3 col">
 
-                <div class="agent_gallery"> 
-                    <img src="./images/agents/Fade.webp" alt="Fade" height="299px" width="125" >
-                    <div class="agent_name">Fade</div>
+                        <div class="row justify-content-center">
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Sova.html">
+                              <div>
+                                <img src="./images/agents/Sova.png" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Sova</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+            
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Breach.html">
+                              <div>
+                                <img src="./images/agents/Breach.png" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Breach</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+            
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Skye.html">
+                              <div>
+                                <img src="./images/agents/skye.webp" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Skye</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+            
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Kayo.html">
+                              <div>
+                                <img src="./images/agents/Kayo.png" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Kayo</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+            
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Fade.html">
+                              <div>
+                                <img src="./images/agents/Fade.webp" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Fade</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+            
+                          <div class="agent_gallery bg-primary">
+                            <a href="./Individual Agents/Gekko.html">
+                              <div>
+                                <img src="./images/agents/Gekko.webp" alt="Jett" height="299px" width="125">
+                                <div class="agent_name">
+                                  <p class="text-dark">Gekko</p>
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="agent_gallery">
-                    <img src="./images/agents/Gekko.webp" alt="Gekko" height="299px" width="125">
-                    <div class="agent_name">Gekko</div>
-                </div>
-        </div><br>
-    </div>
+              </div>
+          </div>
+        </div>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <footer class="py-3">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item"><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
@@ -153,6 +365,6 @@
           <li class="nav-item"><a href="weapons.html" class="nav-link px-2 text-white">Weapons</a></li>
           <li class="nav-item"><a href="about_riot.html" class="nav-link px-2 text-white">About</a></li>
         </ul>
-        <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+        <p class="text-center text-primary">© 2024 Company, Inc</p>
       </footer>
 </html>

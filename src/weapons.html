@@ -11,7 +11,7 @@
     <header class="d-flex flex-wrap justify-content-center py-3 bg-secondary">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
           <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-          <span class="fs-4">Learn Valorant</span>
+          <span class="fs-4 text-primary">Learn Valorant</span>
         </a>
   
         <ul class="nav nav-pills">
@@ -24,172 +24,252 @@
       </header>
 
       <body>
-
-        
+        <div class="bg-danger container p-1 my-2 mx-auto rounded-5 shadow">
+        <div class="text-center text-primary">
         <h2 class="my-5 text-center">Weapons</h2>
-            <div class="container-fluid row gap-3 justify-content-center my-5">
-            <div class="card guns" style="width: 18rem;">
-                <img src="/images/weapons/Classic.webp" alt="Classic">
-                <div class="card-body">
-                  <h5 class="card-title">Classic</h5>
-                  <p class="card-text">The Classic is a pistol that all players receive upon spawning. It has two firing modes, a standard and semi-automatic single-bullet primary fire and a semi-automatic shotgun alternate fire that fires three bullets.</p>
-                  <a href="#" class="btn btn-primary">Cost: Free</a>
+        <p>There are 17 total weapons in valorant each with their own perpose. below is an accoridon with information on each gun and how much they cost in game.</p>
+      </div>
+        <div class="accordion container my-4" id="accordionExample">
+          <div class="accordion-item ">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Pistols
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="container-fluid row gap-3 justify-content-center my-5">
+                <div class="card guns" style="width: 18rem;">
+                  <img src="/images/weapons/Classic.webp" alt="Classic">
+                  <div class="card-body">
+                    <h5 class="card-title">Classic</h5>
+                    <p class="card-text">The Classic is a pistol that all players receive upon spawning. It has two firing modes, a standard and semi-automatic single-bullet primary fire and a semi-automatic shotgun alternate fire that fires three bullets.</p>
+                    <p>Cost: Free</p>
+                  </div>
+                </div>
+  
+                <div class="card guns" style="width: 18rem;">
+                  <img src="/images/weapons/Shorty.webp" alt="Shorty" class="pb-3">
+                  <div class="card-body pt-5 mt-5">
+                    <h5 class="card-title">Shorty</h5>
+                    <p class="card-text">The Shorty is the cheapeast purchaseable weapon in the game. it is a semi-automatic shotgun with a low wall penetration</p>
+                    <p>Cost: $300</p>
+                  </div>
+                </div>
+  
+                <div class="card guns" style="width: 18rem;">
+                  <img src="/images/weapons/Frenzy.webp" alt="Classic">
+                  <div class="card-body">
+                    <h5 class="card-title">Frenzy</h5>
+                    <p class="card-text">The Frenzy is a fully automatic pistol with a low cost and capacity. It's most effective at close range, where you can quickly spray down the enemy.</p>
+                    <p>Cost: $450</p>
+                  </div>
+                </div>
+  
+                <div class="card guns" style="width: 18rem;">
+                  <img src="/images/weapons/Ghost.webp" alt="Classic" class="pb-5 mb-5">
+                  <div class="card-body">
+                    <h5 class="card-title">Ghost</h5>
+                    <p class="card-text">The Ghost is a low-cost semi-automatic pistol. Equipped witha  large magazine and a silencer, it can be used to spam through vision blockers without much risk to the players</p>
+                    <p>Cost: $500</p>
+                  </div>
+                </div>
+                <div class="card guns" style="width: 18rem;">
+                  <img src="./images/weapons/Sheriff.webp" alt="Classic" class="pb-5">
+                  <div class="card-body">
+                    <h5 class="card-title">Sheriff</h5>
+                    <p class="card-text">The Sheriff is a semi-automatic revolver and the most expensive sidearm in the game. Able to kill enemies witha  single bullet to the head at most ranges and health totals.</p>
+                    <p>Cost: $800</p>
+                  </div>
                 </div>
               </div>
-
-              <div class="card guns" style="width: 18rem;">
-                <img src="/images/weapons/Shorty.webp" alt="Shorty">
-                <div class="card-body">
-                  <h5 class="card-title">Shorty</h5>
-                  <p class="card-text">The Shorty is the cheapeast purchaseable weapon in the game. it is a semi-automatic shotgun with a low wall penetration</p>
-                  <a href="#" class="btn btn-primary">Cost: $300</a>
-                </div>
               </div>
-
-              <div class="card guns" style="width: 18rem;">
-                <img src="/images/weapons/Frenzy.webp" alt="Classic"  >
-                <div class="card-body">
-                  <h5 class="card-title">Frenzy</h5>
-                  <p class="card-text">The Frenzy is a fully automatic pistol with a low cost and capacity. It's most effective at close range, where you can quickly spray down the enemy.</p>
-                  <a href="#" class="btn btn-primary">Cost: $450</a>
-                </div>
               </div>
-
-              <div class="card guns" style="width: 18rem;">
-                <img src="/images/weapons/Ghost.webp" alt="Classic" >
-                <div class="card-body">
-                  <h5 class="card-title">Ghost</h5>
-                  <p class="card-text">The Ghost is a low-cost semi-automatic pistol. Equipped witha  large magazine and a silencer, it can be used to spam through vision blockers without much risk to the players</p>
-                  <a href="#" class="btn btn-primary">Cost: $500</a>
-                </div>
-              </div>
-              <div class="card guns" style="width: 18rem;">
-                <img src="./images/weapons/Sheriff.webp" alt="Classic">
-                <div class="card-body">
-                  <h5 class="card-title">Sheriff</h5>
-                  <p class="card-text">The Sheriff is a semi-automatic revolver and the most expensive sidearm in the game. Able to kill enemies witha  single bullet to the head at most ranges and health totals.</p>
-                  <a href="#" class="btn btn-primary">Cost: $800</a>
-                </div>
-              </div>
-            
-                
-                    <div class="card guns" style="width: 18rem;">
-                        <img src="./images/weapons/bucky.png" alt="Classic"  >
-                        <div class="card-body">
-                        <h5 class="card-title">Bucky</h5>
-                        <p class="card-text">The Bucky is one of the two shotguns available in Valorant. The Bucky holds 5 rounds and is an extremely effective weapon at close range.</p>
-                        <a href="#" class="btn btn-primary">Cost: $850</a>
-                        </div>
+            </div>
+          
+          <div class="accordion-item ">
+            <h2 class="accordion-header">
+              <button class="accordion-button bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Shotguns
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="container-fluid row gap-3 justify-content-center my-5">
+                  <div class="card guns" style="width: 18rem;">
+                    <img src="./images/weapons/bucky.png" alt="Classic" class="pb-5" >
+                    <div class="card-body">
+                    <h5 class="card-title">Bucky</h5>
+                    <p class="card-text">The Bucky is one of the two shotguns available in Valorant. The Bucky holds 5 rounds and is an extremely effective weapon at close range.</p>
+                    <p>Cost: $850</p>
                     </div>
+                </div>
 
-              <div class="card guns" style="width: 18rem;">
-                <img src="./images/weapons/Judge.webp" alt="Shorty">
-                <div class="card-body">
-                  <h5 class="card-title">Judge</h5>
-                  <p class="card-text">The Judge is the most expensive shotgun in Valorant, It is fully automatic shotgun with a medium wall penetraion. In very close range and with the right aim, you can eliminate the opponent with just one shot</p>
-                  <a href="#" class="btn btn-primary">Cost: $1850</a>
+                <div class="card guns" style="width: 18rem;">
+                  <img src="./images/weapons/Judge.webp" alt="Shorty">
+                  <div class="card-body">
+                    <h5 class="card-title">Judge</h5>
+                    <p class="card-text">The Judge is the most expensive shotgun in Valorant, It is fully automatic shotgun with a medium wall penetraion. In very close range and with the right aim, you can eliminate the opponent with just one shot</p>
+                    <p>Cost: $1850</p>
+                  </div>
                 </div>
               </div>
-       
-            <div class="card guns" style="width: 18rem;">
-                <img src="./images/weapons/Stinger.webp" alt="Classic"  >
-                <div class="card-body">
-                  <h5 class="card-title">Stinger</h5>
-                  <p class="card-text">The Stinger is a low-cost SMG. It has two firing modes, a standard automatic single-bullet primary fire and a semi-automatic burst-mode that fires four bullets in a burst.</p>
-                  <a href="#" class="btn btn-primary">Cost: $1100</a>
-                </div>
-              </div>
-
-              <div class="card guns" style="width: 18rem;">
-                <img src="./images/weapons/Spectre.webp" alt="Shorty">
-                <div class="card-body">
-                  <h5 class="card-title">Spectre</h5>
-                  <p class="card-text">The Spectre is a moderately-priced SMG equipped with a large amgazine and a ilencer, it can be used to spam through vision blockers without much risk to the player.</p>
-                  <a href="#" class="btn btn-primary">Cost: $1600</a>
-                </div>
-              </div>
-        
-        <div class="card guns" style="width: 18rem;">
-            <img src="./images/weapons/Bulldog.webp" alt="Classic"  >
-            <div class="card-body">
-              <h5 class="card-title">Bulldog</h5>
-              <p class="card-text">The Bulldog is a moderately-priced rifle. It has two firing moes, a standard automatic single-bullet primary fire and a semi-automatic burst=mode alternate fire.</p>
-              <a href="#" class="btn btn-primary">Cost: $2050</a>
             </div>
           </div>
-
-          <div class="card guns" style="width: 18rem;">
-            <img src="./images/weapons/guardian.png" alt="Shorty" >
-            <div class="card-body">
-              <h5 class="card-title">Guardian</h5>
-              <p class="card-text">The Guardian is a high penetration slow-firing rifle that deals an insane amount of damage. It can one-tap headshot at any range, and can also go through some walls.</p>
-              <a href="#" class="btn btn-primary">Cost: $2250</a>
-            </div>
-          </div>
-
-          <div class="card guns" style="width: 18rem;">
-            <img src="./images/weapons/phantom.png" alt="Shorty" >
-            <div class="card-body">
-              <h5 class="card-title">Phantom</h5>
-              <p class="card-text">The Phantom is a high-cost automatic rifle. One of Valorants best general-purpose weapons, it is most effective at short to medium range where it is able to spray down multiple enemies at once due to its high fire rate.</p>
-              <a href="#" class="btn btn-primary">Cost: $2900</a>
-            </div>
-          </div>
-
-          <div class="card guns" style="width: 18rem;">
-            <img src="./images/weapons/Vandal.webp" alt="Shorty">
-            <div class="card-body">
-              <h5 class="card-title">Vandal</h5>
-              <p class="card-text">The Vandal is a high-cost automatic rifle. One of Valorants best general-purpose weapons, it is most effective at picking off individual targers at longer ranges due to having no falloff, allowing it to kill any enemy with a single headshot at all ranges.</p>
-              <a href="#" class="btn btn-primary">Cost: $2900</a>
-            </div>
-          </div>
-    
-            <div class="card guns" style="width: 18rem;">
-                <img src="./images/weapons/marshal.png" alt="Classic"  >
-                <div class="card-body">
-                  <h5 class="card-title">Marshal</h5>
-                  <p class="card-text">The Marshal is a low cost sniper rifle. As a sniper, it has a scope with a single zoom setting on its Alternate Fire mode that has perfect accuracy when standing still.</p>
-                  <a href="#" class="btn btn-primary">Cost: $950</a>
-                </div>
-              </div>
-
-              <div class="card guns" style="width: 18rem;">
-                <img src="./images/weapons/Outlaw.png" alt="Classic"  >
-                <div class="card-body">
-                  <h5 class="card-title">Outlaw</h5>
-                  <p class="card-text">The Outlaw is a sniper rifle. The weapons has a high wall penetration and deals significant damage in even body shots. However it only contains two bullets within a magazine</p>
-                  <a href="#" class="btn btn-primary">Cost: $2400</a>
-                </div>
-              </div>
-
-              <div class="card guns" style="width: 18rem;">
-                <img src="./images/weapons/operator.png" alt="Shorty">
-                <div class="card-body">
-                  <h5 class="card-title">Operator</h5>
-                  <p class="card-text">The Operator is a high-cost sniper rifle and the most expensive gun in the game. As a sniper, it has a scope with two zoom settings on its Alternate Fire mode that has perfect accuracy when standing still.</p>
-                  <a href="#" class="btn btn-primary">Cost: $4700</a>
-                </div>
-              </div>
-        
-            <div class="card guns" style="width: 18rem;">
-                <img src="./images/weapons/ares.webp" alt="Classic">
-                <div class="card-body">
-                  <h5 class="card-title">Ares</h5>
-                  <p class="card-text">The Ares is a medium-cost machine gun. As a machine gun, it is most effective as either a defensive tool to hold a site or when used to get wallbang kills due to its high penetration and rate of fire.</p>
-                  <a href="#" class="btn btn-primary">Cost: $1600</a>
-                </div>
-              </div>
-
-              <div class="card guns" style="width: 18rem;">
-                <img src="./images/weapons/odin.png" alt="Shorty">
-                <div class="card-body">
-                  <h5 class="card-title">Odin</h5>
-                  <p class="card-text">The Odin is a high-cost machine gun. When using primary fire, the odin's fire rate will increase over the duration the weapon is fired to a maximum amount, but using Alternate fire will allow the user to shoot at the maximum fire rate immediately</p>
-                  <a href="#" class="btn btn-primary">Cost: $3200</a>
-                </div>
-              </div>
         </div>
+
+        <div class="accordion-item ">
+          <h2 class="accordion-header">
+            <button class="accordion-button bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            SMGs
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="container-fluid row gap-3 justify-content-center my-5">
+                <div class="card guns" style="width: 18rem;">
+                  <img src="./images/weapons/Stinger.webp" alt="Classic"  >
+                  <div class="card-body">
+                    <h5 class="card-title">Stinger</h5>
+                    <p class="card-text">The Stinger is a low-cost SMG. It has two firing modes, a standard automatic single-bullet primary fire and a semi-automatic burst-mode that fires four bullets in a burst.</p>
+                    <p>Cost: $1100</p>
+                  </div>
+                </div>
+  
+                <div class="card guns" style="width: 18rem;">
+                  <img src="./images/weapons/Spectre.webp" alt="Shorty">
+                  <div class="card-body">
+                    <h5 class="card-title">Spectre</h5>
+                    <p class="card-text">The Spectre is a moderately-priced SMG equipped with a large amgazine and a ilencer, it can be used to spam through vision blockers without much risk to the player.</p>
+                    <p>Cost: $1600</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item ">
+        <h2 class="accordion-header">
+          <button class="accordion-button bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Rifles
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="container-fluid row gap-3 justify-content-center my-5">
+              <div class="card guns" style="width: 18rem;">
+                <img src="./images/weapons/Bulldog.webp" alt="Classic"  >
+                <div class="card-body">
+                  <h5 class="card-title">Bulldog</h5>
+                  <p class="card-text">The Bulldog is a moderately-priced rifle. It has two firing moes, a standard automatic single-bullet primary fire and a semi-automatic burst=mode alternate fire.</p>
+                  <p>Cost: $2050</p>
+                </div>
+              </div>
+    
+              <div class="card guns" style="width: 18rem;">
+                <img src="./images/weapons/guardian.png" alt="Shorty" >
+                <div class="card-body">
+                  <h5 class="card-title">Guardian</h5>
+                  <p class="card-text">The Guardian is a high penetration slow-firing rifle that deals an insane amount of damage. It can one-tap headshot at any range, and can also go through some walls.</p>
+                  <p>Cost: $2250</p>
+                </div>
+              </div>
+    
+              <div class="card guns" style="width: 18rem;">
+                <img src="./images/weapons/phantom.png" alt="Shorty" >
+                <div class="card-body">
+                  <h5 class="card-title">Phantom</h5>
+                  <p class="card-text">The Phantom is a high-cost automatic rifle. One of Valorants best general-purpose weapons, it is most effective at short to medium range where it is able to spray down multiple enemies at once due to its high fire rate.</p>
+                  <p>Cost: $2900</p>
+                </div>
+              </div>
+    
+              <div class="card guns" style="width: 18rem;">
+                <img src="./images/weapons/Vandal.webp" alt="Shorty" class="pt-5 pb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Vandal</h5>
+                  <p class="card-text">The Vandal is a high-cost automatic rifle. One of Valorants best general-purpose weapons, it is most effective at picking off individual targers at longer ranges due to having no falloff, allowing it to kill any enemy with a single headshot at all ranges.</p>
+                  <p>Cost: $2900</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item ">
+      <h2 class="accordion-header">
+        <button class="accordion-button bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        Snipers
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div class="container-fluid row gap-3 justify-content-center my-5">
+            <div class="card guns" style="width: 18rem;">
+              <img src="./images/weapons/marshal.png" alt="Classic"  >
+              <div class="card-body">
+                <h5 class="card-title">Marshal</h5>
+                <p class="card-text">The Marshal is a low cost sniper rifle. As a sniper, it has a scope with a single zoom setting on its Alternate Fire mode that has perfect accuracy when standing still.</p>
+                <p>Cost: $950</p>
+              </div>
+            </div>
+
+            <div class="card guns" style="width: 18rem;">
+              <img src="./images/weapons/Outlaw.png" alt="Classic" class="pt-4 pb-2" >
+              <div class="card-body">
+                <h5 class="card-title">Outlaw</h5>
+                <p class="card-text">The Outlaw is a sniper rifle. The weapons has a high wall penetration and deals significant damage in even body shots. However it only contains two bullets within a magazine</p>
+                <p>Cost: $2400</p>
+              </div>
+            </div>
+
+            <div class="card guns" style="width: 18rem;">
+              <img src="./images/weapons/operator.png" alt="Shorty">
+              <div class="card-body">
+                <h5 class="card-title">Operator</h5>
+                <p class="card-text">The Operator is a high-cost sniper rifle and the most expensive gun in the game. As a sniper, it has a scope with two zoom settings on its Alternate Fire mode that has perfect accuracy when standing still.</p>
+                <p>Cost: $4700</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item ">
+    <h2 class="accordion-header">
+      <button class="accordion-button bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+      LMGs
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <div class="container-fluid row gap-3 justify-content-center my-5">
+          <div class="card guns" style="width: 18rem;">
+            <img src="./images/weapons/ares.webp" alt="Classic" class="pt-5 pb-4">
+            <div class="card-body">
+              <h5 class="card-title">Ares</h5>
+              <p class="card-text">The Ares is a medium-cost machine gun. As a machine gun, it is most effective as either a defensive tool to hold a site or when used to get wallbang kills due to its high penetration and rate of fire.</p>
+              <p>Cost: $1600</p>
+            </div>
+          </div>
+
+          <div class="card guns" style="width: 18rem;">
+            <img src="./images/weapons/odin.png" alt="Shorty" class="pt-5" >
+            <div class="card-body">
+              <h5 class="card-title">Odin</h5>
+              <p class="card-text">The Odin is a high-cost machine gun. When using primary fire, the odin's fire rate will increase over the duration the weapon is fired to a maximum amount, but using Alternate fire will allow the user to shoot at the maximum fire rate immediately</p>
+              <p>Cost: $3200</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>     
     
  
 
@@ -203,8 +283,9 @@
           <li class="nav-item"><a href="weapons.html" class="nav-link px-2 text-white">Weapons</a></li>
           <li class="nav-item"><a href="about_riot.html" class="nav-link px-2 text-white">About</a></li>
         </ul>
-        <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+        <p class="text-center text-primary">© 2024 Company, Inc</p>
       </footer>
 
       </body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </html>
